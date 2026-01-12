@@ -4,7 +4,7 @@ Number=$1
 
 
 #-gt, -lt, -eq, -ge, -le
-if [$Number -gt 100 ]
+if [ $Number -gt 100 ]
 then
     echo "Given number is greater than 100"
 else
