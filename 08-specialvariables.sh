@@ -1,5 +1,6 @@
 echo "all variables passed: $@"
-echo "number of vaiables: $#"
+
+echo "numbeer of vaiables: $#"
 echo "present working directory: $PWD"
 echo "directory of current user: $home"
 echo "process id of current script: $$"
