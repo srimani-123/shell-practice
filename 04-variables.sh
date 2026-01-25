@@ -1,7 +1,10 @@
 #!/bin/bash
 
-person1=$1
-person2=$2
+Number1=$1
+Number2=$2
 
-echo "$person1 : Hi $person2 how are you?"
-echo "$person2 : I am good what about you?"
+Timestamp=$(date)
+echo "script executed at: $Timestamp"
+sum=$(($Number1+$Number2))
+
+echo "sum of $number1 and $number2 is: $sum"
