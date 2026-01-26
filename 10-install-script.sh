@@ -1,3 +1,11 @@
 #!/bin/bash
 
-dnf install mysql -y
+USERID=$(id -u)
+
+if [ $USERID -ne 0 ]
+then 
+    echo "Error: You must have sudo access to execute the script"
+    exit 1
+fi
+
+dnf install mysql -y 
