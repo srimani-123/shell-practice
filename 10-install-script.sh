@@ -19,6 +19,7 @@ if [$? -ne 0]
 else
     echo "Installing mysql ...Success"
 fi
+else
     echo "Mysql is already.. Installed"
 fi
 
@@ -48,7 +49,7 @@ then
 else
     echo "Git is already ....Installed"
 fi
- 
+
 
 
 
