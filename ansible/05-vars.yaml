@@ -2,6 +2,6 @@
   hosts: local
   connection: local
   tasks:
-  - name: print the variable
+  - name: printing the variable
     ansible.builtin.debug:
-      msg: "Course is devops"
+      msg: "Hi Mani welcome to devops, How are you"
