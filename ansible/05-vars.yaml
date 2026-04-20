@@ -1,7 +1,7 @@
 - name: variable
   hosts: local
   connection: local
-  vars:
+  vars: #Play Level Variables
     Course: "DevOps"
     Duration: "12hrs"
     Trainer: "Sri Manikanta"
