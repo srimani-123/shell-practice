@@ -3,8 +3,8 @@
   connection: local
   vars: #Play Level Variables
     GREET: "PLAY"
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: GREET
     prompt: Enter the value
@@ -20,3 +20,5 @@
 
 #1. Command line or orgs
 #2. Task Level
+#3. Files
+#4. 
