@@ -3,8 +3,8 @@
   connection: local
   vars: # Play Level Variables
     GREET: "PLAY"
-  vars_files:
-    - course.yaml
+  # vars_files:
+  #   - course.yaml
 
   vars_prompt:
     - name: GREET
