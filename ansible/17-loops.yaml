@@ -8,6 +8,7 @@
         msg: "{{ item }}"
 
       loop:
-        - Ramesh
-        - Suresh
-        - Hareesh
+        - gcc
+        - git
+        - mysql
+        - zip
