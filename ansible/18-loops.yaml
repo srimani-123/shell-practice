@@ -1,0 +1,13 @@
+- name: install packages
+  hosts: web
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.package:\
+      name: "{{ item }}" #Here why we gave item means, In loop we have list of items. thats the reason we have mentioned list.
+      state: installed
+    loop:
+    - gcc
+    - git
+    - zip
+    - mysql
