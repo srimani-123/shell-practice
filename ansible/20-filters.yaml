@@ -22,3 +22,14 @@
           trainer: manikanta
       ansible.builtin.debug:
         msg: "Course info: {{ course | dict2items }}"
+
+
+    - name: convert list into map
+      vars:
+        course:
+        - { name: 'gcc', state: 'present' }``
+        - { name: 'mysql', state: 'absent' }
+        - { name: 'git', state: 'present' }
+        - { name: 'zip', state: 'absent' }
+      ansible.builtin.debug:
+        msg: "Course info: {{ course | items2dict  }}"
