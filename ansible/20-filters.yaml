@@ -42,3 +42,22 @@
         name: "Sri Manikanta A"
       ansible.builtin.debug:
         msg: "Hello {{ name | lower }}"
+
+    
+    - name: convert lower to upper
+      vars:
+        name: "Sri Manikanta A"
+      ansible.builtin.debug:
+        msg: "Hello {{ name | upper }}"
+    
+    - name: print min and max
+  vars:
+    numbers: [1,30,57,87,98,46845]
+  ansible.builtin.debug:
+    msg: "Min is: {{ numbers | min }}, Max is: {{ numbers | max }}"
+
+- name: check ipaddress is valid or not
+  vars:
+    ip: "256.255.245.256"
+  ansible.builtin.debug:
+    msg: "{{ ip | ansible.utils.ipaddr }}"
