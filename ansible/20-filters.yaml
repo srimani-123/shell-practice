@@ -36,28 +36,30 @@
       ansible.builtin.debug:
         msg: "Course info: {{ course | items2dict(key_name='name', value_name='state') }}"
 
-
     - name: convert upper to lower
       vars:
         name: "Sri Manikanta A"
+
       ansible.builtin.debug:
         msg: "Hello {{ name | lower }}"
 
-    
     - name: convert lower to upper
-  vars:
-    name: "Sri Manikanta A"
-  ansible.builtin.debug:
-    msg: "Hello {{ name | upper }}"
+      vars:
+        name: "Sri Manikanta A"
 
-- name: print min and max
-  vars:
-    numbers: [1, 30, 57, 87, 98, 46845]
-  ansible.builtin.debug:
-    msg: "Min is: {{ numbers | min }}, Max is: {{ numbers | max }}"
+      ansible.builtin.debug:
+        msg: "Hello {{ name | upper }}"
 
-- name: check ipaddress is valid or not
-  vars:
-    ip: "256.255.245.256"
-  ansible.builtin.debug:
-    msg: "{{ ip | ansible.utils.ipaddr }}"
+    - name: print min and max
+      vars:
+        numbers: [1, 30, 57, 87, 98, 46845]
+
+      ansible.builtin.debug:
+        msg: "Min is: {{ numbers | min }}, Max is: {{ numbers | max }}"
+
+    - name: check ipaddress is valid or not
+      vars:
+        ip: "256.255.245.256"
+
+      ansible.builtin.debug:
+        msg: "{{ ip | ansible.utils.ipaddr }}"
